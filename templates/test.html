@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+  
+  <form id="myForm" method="post" action="{% url 'test' %}" >
+    {% csrf_token %}
+    <ul >
+        <li>
+            <label for="f3c02e19-72bf-4614-953a-33b5c97910df">
+                <div class="TextInput_labelGroup__wvGU2"><div style="color: #000000;">Year</div></div>
+                <div class="">
+                    <textarea
+                        id="year"
+                      
+                        placeholder="2023"
+                        
+                        aria-invalid="false"
+                        style="height: 58px !important;"
+                    ></textarea>
+                </div>
+            </label>
+        </li>
+        <li>
+            <label for="05116011-951f-4496-af34-5bd329613328">
+                <div><div  style="color: #000000;">Make</div></div>
+                <div class="">
+                    <textarea
+                    id='make'
+            
+                        placeholder="Ford"
+                    
+                    
+                        style="height: 58px !important;"
+                    ></textarea>
+                </div>
+            </label>
+        </li>
+        <li>
+            <label for="3d090b1a-59bd-440f-8fa1-fa77687a476c">
+                <div ><div style="color: #000000;">Model</div></div>
+                <div class="">
+                    <textarea
+                    id='model'
+              
+                        placeholder="F150"
+                        
+                        style="height: 58px !important;"
+                    ></textarea>
+                </div>
+            </label>
+        </li>
+        <li>
+            <label for="b9193cdd-a6f7-4cff-bb36-f84cea7e70f8">
+                <div ><div  style="color: #000000;">Features</div></div>
+                <div class="">
+                    <textarea
+                    id='features'
+                  
+                        placeholder="Bed Length &amp; Anything Special I Should Search For"
+                        
+                        aria-invalid="false"
+                        style="height: 85px !important;"
+                    ></textarea>
+                </div>
+            </label>
+        </li>
+        <li>
+            <label for="5261fd45-0135-429b-9261-70c8185c929e">
+                <div class="TextInput_labelGroup__wvGU2"><div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Product You're Looking For</div></div>
+                <div class="">
+                    <textarea
+                    id='product'
+          
+                        placeholder="BAK MX4"
+                        class="TextInput_textInput__xu1K2 TextInput_textArea__rkCAd AppLayout_textInputInput__E9DqE"
+                        aria-invalid="false"
+                        style="height: 58px !important;"
+                    ></textarea>
+                </div>
+            </label>
+        </li>
+        {% comment %} <li>
+            <label for="email">
+                <div class="TextInput_labelGroup__wvGU2">
+                    <div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Your Email</div>
+                    <div class="TextInput_subLabelStyle__Bvh_l" style="color: #000000;">
+                        <span>
+                            Required.<!-- -->
+                            <button type="button" class="AppLayout_signUpLink__XOvbA" style="color: #000000;" fdprocessedid="asikf">Sign in / up</button>
+                            <!-- -->to skip this step.
+                        </span>
+                    </div>
+                </div>
+                <div class=""><input id="email" type="email" autocomplete="off" class="TextInput_textInput__xu1K2 AppLayout_textInputInput__E9DqE" aria-invalid="false" value="" fdprocessedid="1uai9d" /></div>
+            </label>
+        </li> {% endcomment %}
+    </ul>
+    <div >
+        <button  type="submit" style="color: #000000;" fdprocessedid="z9lap">
+            <div class="Button_iconContainer__WNKAX"><div>Clear</div></div>
+        </button>
+        <button type='button' id="loadDataBt" class="Button_button__MqjEq Button_customButton__RoHVu Button_sizeM__fT69s"  style="color: #000; background-color: #00ffbb; border-color: #00ffbb;" >
+            <div class="Button_iconContainer__WNKAX" >Try for Free</div>
+        </button>
+    </div> 
+</form>
+  <!-- Include jQuery library -->
+
+  <div id="progress" style="display:none;">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+    </div>
+    <p id="progressText" style='color:white;'></p>
+</div>
+<div>
+    
+  <div class="dataContainer1">
+
+    
+  </div>
+<div id='dataContainer2'  style='display:none;'>
+  <div id="dataContainer1">
+
+
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      console.log('page ready');
+  
+      var progressBar = $(".progress-bar");
+      var progressText = $("#progressText");
+      var progress = $('#progress');
+      var intervalId;
+  
+      $("#loadDataBt").on("click", function() {
+        console.log('btn click');
+        var question = $('#year').val();
+        var question1 = $('#make').val();
+        var question2 = $('#model').val();
+        var question3 = $('#features').val();
+        var question4 = $('#product').val();
+        console.log(question,question1, question2, question3, question4);
+  
+        progressBar.css("width", "0%");
+        progressBar.attr("aria-valuenow", "0");
+        progressBar.show();
+        progressText.show();
+        progress.show();
+        var progressValue = 0;    
+        clearInterval(intervalId);
+        intervalId = setInterval(function() {
+          progressValue += 10;
+          progressBar.css("width", progressValue + "%");
+          progressBar.attr("aria-valuenow", progressValue);
+          progressText.text("Loading data... " + progressValue + "%");
+          if (progressValue >= 100) {
+            clearInterval(intervalId);
+  
+            // Use AJAX to fetch data from Django view
+            $.ajax({
+              type: 'POST',
+              url: $('#myForm').attr('action'),
+              data: {
+                'year': question,
+                'make': question1,
+                'model': question2,
+                'features': question3,
+                'product': question4,
+                'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val()
+              },
+              success: function(data) {
+                // Handle successful response here
+                // Update UI or do further processing with the response data
+                
+                $('#year').val('');
+                $('#make').val('');
+                $('#model').val('');
+                $('#features').val('');
+                $('#product').val('');
+  
+                $("#dataContainer1").html(data.nav);
+                $("#shareid").html(data.id);
+                $("#dataContainer2").css("display", "block");
+                $("#dataContainer1").show();
+  
+                // Hide progress bar and text
+                progressBar.hide();
+                progressText.hide();
+                progress.hide();
+              },
+              error: function() {
+                // Handle error case here
+                progressText.text("Error loading data!");
+                // Hide progress bar
+                progressBar.hide();
+                $("#dataContainer").hide();
+              }
+            });
+          }
+        }, 1000);
+      });
+    });
+  </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

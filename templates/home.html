@@ -1,0 +1,485 @@
+<html >
+    <div id="in-page-channel-node-id" data-channel-name="in_page_channel_jpaAE1"></div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Compare Ai</title>
+      
+        <link rel="preload" href="/static/284fe97b3baf15d4.css" as="style" />
+        <link rel="stylesheet" href="/static/284fe97b3baf15d4.css" data-n-g="" />
+        <link rel="preload" href="/static/27d3f546cf581320.css" as="style" />
+        <link rel="stylesheet" href="/static/27d3f546cf581320.css" data-n-p="" />
+        <noscript data-n-css=""></noscript>
+        <script type="text/javascript" async="" src="https://widget.intercom.io/widget/urktdwi7"></script>
+        <script defer="" nomodule="" src="/_next/static/polyfills-c67a75d1b6f99dc8.js"></script>
+        <script src="/static/webpack-f48aabf78ac75439.js" defer=""></script>
+        <script src="/static/framework-73b8966a3c579ab0.js" defer=""></script>
+        <script src="/static/main-f6d14203ba3339af.js" defer=""></script>
+        <script src="/static/pages/_app-d677027f572de262.js" defer=""></script>
+        <script src="/static/910-f20fd160690b42b2.js" defer=""></script>
+        <script src="/static/767-c35c3b02f12db325.js" defer=""></script>
+        <script src="/static/557-f8559a789102b455.js" defer=""></script>
+        <script src="/static/950-aefeb3222ac3b2ee.js" defer=""></script>
+        <script src="/static/492-9c5b703ed80e0663.js" defer=""></script>
+        <script src="/static/136-378465ccb4a94d0f.js" defer=""></script>
+        <script src="/static/280-59b6bda0407959e0.js" defer=""></script>
+        <script src="/static/929-fa1f8c9309265a45.js" defer=""></script>
+        <script src="/static/pages/%5B...slug%5D-5e9c5d940826c6c7.js" defer=""></script>
+        <script src="/static/Kb_QduiFjDX8nKr1j9dkA/_buildManifest.js" defer=""></script>
+        <script src="/static/Kb_QduiFjDX8nKr1j9dkA/_ssgManifest.js" defer=""></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="/_vercel/insights/script.js" defer="" data-sdkn="@vercel/analytics" data-sdkv="1.0.1"></script>
+    
+        <style>
+            .progress {
+                margin-top: 20px;
+                background-color: black;
+                border-radius: 10px;
+                height: 20px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .progress-bar {
+                background-color: #00FFBB;
+                height: 100%;
+                transition: width 0.3s ease;
+            }
+            #progressText {
+                margin-top: 5px;
+                text-align: center;
+            }
+            #dataContainer {
+                margin-top: 20px;
+                background-color: #f0f0f0;
+                border-radius: 4px;
+                padding: 10px;
+                display: none;
+            }
+            #loadDataBtn {
+                display: block;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body cz-shortcut-listen="true">
+        <div id="__next">
+          
+            <div class="PublicLayout_content__TNLZQ" style="background-color: #ffffff; color: #000000;">
+                <div class="AppLayout_container__HqVTS">
+                    <div class="AppLayout_content__kkd1Q">
+                        <div class="AppLayout_inputOutputLayout__iKnIq">
+                            <section class="AppLayout_inputLayout__vI6ya">
+                                <div>
+                                    <h1 class="AppDetail_appTitle__NHE5J">Best Price Part Finder</h1>
+                                    {% comment %} <div class="AppDetail_creatorName__iAX2N">
+                                        by
+                                        <div class="Avatar_container__WS86Q" style="width: 30px; height: 30px;">
+                                            <img src="https://storage.googleapis.com/brancher-ai/user-avatar/3d99ff12-dcda-456b-a259-76d48e89bbe7.png" width="30" height="30" class="Avatar_avatar__deSqZ" />
+                                            <span class="Avatar_initialsContainer__h5K_2" style="font-size: 0.75rem; color: var(--colorWhite);">T</span>
+                                        </div>
+                                        <a href="/user/thegoldmine" class="AppDetail_userLink__14KhO" style="color: #000000;"><strong>TheGoldMine</strong></a>
+                                    </div> {% endcomment %}
+                                    <button   id="show-button" type="button" class="AppDetail_resultActionButton__MHM0f" style="border-color: #000000; color: #000000;" fdprocessedid="j8y3ko">
+                                        <div class="AppDetail_resultActionButtonLayout__FExgu">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="Icon_container__7xqR9" width="24" height="24" style="color: #000000; fill: #000000;">
+                                                <path d="M192 224H40c-8.8 0-16-7.2-16-16V88c0-4.4 3.6-8 8-8s8 3.6 8 8v120h152c4.4 0 8 3.6 8 8s-3.6 8-8 8z"></path>
+                                                <path
+                                                    d="M230.2 109.1c.1-.1.2-.2.2-.3.1-.1.2-.2.2-.3.1-.1.2-.2.2-.4.1-.1.1-.2.2-.3s.1-.3.2-.4.1-.2.2-.3.1-.3.1-.4.1-.2.1-.4c0-.1.1-.3.1-.4s.1-.2.1-.4 0-.3.1-.5v-.3c.1-.5.1-1.1 0-1.6v-.3c0-.2 0-.3-.1-.5 0-.1-.1-.2-.1-.4 0-.1-.1-.3-.1-.4s-.1-.2-.1-.4c0-.1-.1-.3-.1-.4s-.1-.2-.2-.3-.1-.3-.2-.4-.1-.2-.2-.3-.1-.2-.2-.4c-.1-.1-.2-.2-.2-.3-.1-.1-.1-.2-.2-.3-.1-.2-.3-.4-.5-.5l-.1-.1-48-48c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L204.7 96H168c-47.4 0-88.9 32.1-100.7 78-1.1 4.3 1.5 8.6 5.7 9.8.7.2 1.3.3 2 .3 3.6 0 6.8-2.4 7.7-6 10.1-38.9 45.1-66 85.3-66h36.7l-34.3 34.3c-3.1 3.1-3.1 8.2 0 11.3 1.6 1.6 3.6 2.3 5.7 2.3s4.1-.8 5.7-2.3l48-48 .1-.1c0-.2.1-.3.3-.5z"
+                                                ></path>
+                                            </svg>
+                                            Share
+                                        </div>
+                                    </button>
+                                </div>
+                                <form id="myForm" method="post" action="{% url 'home' %}" >
+                                    {% csrf_token %}
+                                    <ul class="AppLayout_formFields__EF9c3">
+                                        <li>
+                                            <label for="f3c02e19-72bf-4614-953a-33b5c97910df">
+                                                <div class="TextInput_labelGroup__wvGU2"><div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Year</div></div>
+                                                <div class="">
+                                                    <textarea
+                                                        id="year"
+                                                        name="year"
+                                                        placeholder="2023"
+                                                        class="TextInput_textInput__xu1K2 TextInput_textArea__rkCAd AppLayout_textInputInput__E9DqE"
+                                                        aria-invalid="false"
+                                                        style="height: 58px !important;"
+                                                    ></textarea>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="05116011-951f-4496-af34-5bd329613328">
+                                                <div class="TextInput_labelGroup__wvGU2"><div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Make</div></div>
+                                                <div class="">
+                                                    <textarea
+                                                    id='make'
+                                                    name='Make'
+                                                        placeholder="Ford"
+                                                        class="TextInput_textInput__xu1K2 TextInput_textArea__rkCAd AppLayout_textInputInput__E9DqE"
+                                                        aria-invalid="false"
+                                                        style="height: 58px !important;"
+                                                    ></textarea>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="3d090b1a-59bd-440f-8fa1-fa77687a476c">
+                                                <div class="TextInput_labelGroup__wvGU2"><div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Model</div></div>
+                                                <div class="">
+                                                    <textarea
+                                                    id='model'
+                                                    name='Model'
+                                                        placeholder="F150"
+                                                        class="TextInput_textInput__xu1K2 TextInput_textArea__rkCAd AppLayout_textInputInput__E9DqE"
+                                                        
+                                                        style="height: 58px !important;"
+                                                    ></textarea>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="b9193cdd-a6f7-4cff-bb36-f84cea7e70f8">
+                                                <div class="TextInput_labelGroup__wvGU2"><div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Features</div></div>
+                                                <div class="">
+                                                    <textarea
+                                                    id='features'
+                                                    name='Features'
+                                                        placeholder="Bed Length &amp; Anything Special I Should Search For"
+                                                        class="TextInput_textInput__xu1K2 TextInput_textArea__rkCAd AppLayout_textInputInput__E9DqE"
+                                                        aria-invalid="false"
+                                                        style="height: 85px !important;"
+                                                    ></textarea>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="5261fd45-0135-429b-9261-70c8185c929e">
+                                                <div class="TextInput_labelGroup__wvGU2"><div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Product You're Looking For</div></div>
+                                                <div class="">
+                                                    <textarea
+                                                    id='product'
+                                                    name='Product'
+                                                        placeholder="BAK MX4"
+                                                        class="TextInput_textInput__xu1K2 TextInput_textArea__rkCAd AppLayout_textInputInput__E9DqE"
+                                                        aria-invalid="false"
+                                                        style="height: 58px !important;"
+                                                    ></textarea>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        {% comment %} <li>
+                                            <label for="email">
+                                                <div class="TextInput_labelGroup__wvGU2">
+                                                    <div class="TextInput_labelStyle__Sb3Kc AppLayout_textInputLabel__e9Twy" style="color: #000000;">Your Email</div>
+                                                    <div class="TextInput_subLabelStyle__Bvh_l" style="color: #000000;">
+                                                        <span>
+                                                            Required.<!-- -->
+                                                            <button type="button" class="AppLayout_signUpLink__XOvbA" style="color: #000000;" fdprocessedid="asikf">Sign in / up</button>
+                                                            <!-- -->to skip this step.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class=""><input id="email" type="email" autocomplete="off" class="TextInput_textInput__xu1K2 AppLayout_textInputInput__E9DqE" aria-invalid="false" value="" fdprocessedid="1uai9d" /></div>
+                                            </label>
+                                        </li> {% endcomment %}
+                                    </ul>
+                                    <div class="AppLayout_submitButton__xhWdC">
+                                        <button class="Button_button__MqjEq Button_customButton__RoHVu Button_sizeM__fT69s" type="submit" style="color: #000000;" fdprocessedid="z9lap">
+                                            <div class="Button_iconContainer__WNKAX"><div>Clear</div></div>
+                                        </button>
+                                        <button type='button' id="loadDataBt" class="Button_button__MqjEq Button_customButton__RoHVu Button_sizeM__fT69s"  style="color: #000; background-color: #00ffbb; border-color: #00ffbb;" >
+                                            <div class="Button_iconContainer__WNKAX" >Try for Free</div>
+                                        </button>
+                                    </div>
+                                </form>
+                            </section>
+                            <div id="progress" style="display:none;">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                                </div>
+                                <p id="progressText" style='color:white;'></p>
+                            </div>
+                            <div >
+                                
+       <div id='dataContainer2' style='display:none;'>
+                            <section class="AppLayout_outputSection__zvNMu">
+                                <div class="AppOutput_outputSection__ssbXw">
+                                    <div class="AppOutput_resultActions__ysAyg">
+                                        <div class="DropDown_container__loAw2">
+                                            <button    id='show-button1' type="button" class="AppOutput_resultActionButton__QM5CW" style="border-color: rgb(0, 0, 0); color: rgb(0, 0, 0);" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
+                                                <div class="AppOutput_resultActionButtonLayout__g3u6v">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="Icon_container__7xqR9" width="32" height="32" style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);">
+                                                        <path d="M192 224H40c-8.8 0-16-7.2-16-16V88c0-4.4 3.6-8 8-8s8 3.6 8 8v120h152c4.4 0 8 3.6 8 8s-3.6 8-8 8z"></path>
+                                                        <path
+                                                            d="M230.2 109.1c.1-.1.2-.2.2-.3.1-.1.2-.2.2-.3.1-.1.2-.2.2-.4.1-.1.1-.2.2-.3s.1-.3.2-.4.1-.2.2-.3.1-.3.1-.4.1-.2.1-.4c0-.1.1-.3.1-.4s.1-.2.1-.4 0-.3.1-.5v-.3c.1-.5.1-1.1 0-1.6v-.3c0-.2 0-.3-.1-.5 0-.1-.1-.2-.1-.4 0-.1-.1-.3-.1-.4s-.1-.2-.1-.4c0-.1-.1-.3-.1-.4s-.1-.2-.2-.3-.1-.3-.2-.4-.1-.2-.2-.3-.1-.2-.2-.4c-.1-.1-.2-.2-.2-.3-.1-.1-.1-.2-.2-.3-.1-.2-.3-.4-.5-.5l-.1-.1-48-48c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L204.7 96H168c-47.4 0-88.9 32.1-100.7 78-1.1 4.3 1.5 8.6 5.7 9.8.7.2 1.3.3 2 .3 3.6 0 6.8-2.4 7.7-6 10.1-38.9 45.1-66 85.3-66h36.7l-34.3 34.3c-3.1 3.1-3.1 8.2 0 11.3 1.6 1.6 3.6 2.3 5.7 2.3s4.1-.8 5.7-2.3l48-48 .1-.1c0-.2.1-.3.3-.5z"
+                                                        ></path>
+                                                    </svg>
+                                                    <div class="AppOutput_isMobile__FUq0K">Share</div>
+                                                </div>
+                                            </button>
+                                            <div class="DropDown_menu__OKKn3 DropDown_menuLeft__ZlB0G" role="menu">
+                                                <a class="DropDown_menuItem__EuRSp" tabindex="-1" role="menuitem">Share Results Page</a><a class="DropDown_menuItem__EuRSp" tabindex="-1" role="menuitem">Share This App</a>
+                                            </div>
+                                        </div>
+                                        <a href="{% url 'texttoimage'  %}">
+                                        <button type="button" class="AppOutput_resultActionButton__QM5CW" style="border-color: rgb(0, 0, 0); color: rgb(0, 0, 0);">
+                                            <div class="AppOutput_resultActionButtonLayout__g3u6v">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="Icon_container__7xqR9" width="32" height="32" style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);">
+                                                    <path
+                                                        d="M122.3 157.7c.1 0 .1 0 0 0 .2.2.4.4.6.5.1.1.2.1.3.2s.2.2.3.2c.1.1.2.1.4.2.1.1.2.1.3.2s.2.1.4.2c.1.1.2.1.3.2.1 0 .2.1.4.1.1 0 .3.1.4.1s.2.1.4.1c.1 0 .3.1.4.1s.3 0 .4.1c.1 0 .2 0 .4.1h1.6c.1 0 .2 0 .3-.1.1 0 .3 0 .4-.1.1 0 .3-.1.4-.1s.2-.1.4-.1c.1 0 .2-.1.4-.1.1 0 .2-.1.4-.1.1 0 .2-.1.3-.2s.3-.1.4-.2.2-.1.3-.2.3-.1.4-.2.2-.1.3-.2.2-.2.3-.2c.1-.1.3-.2.4-.4l.2-.2 42-42c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L136 132.7V40c0-4.4-3.6-8-8-8s-8 3.6-8 8v92.7l-28.3-28.3c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3z"
+                                                    ></path>
+                                                    <path d="M216 144c-4.4 0-8 3.6-8 8v56H48v-56c0-4.4-3.6-8-8-8s-8 3.6-8 8v56c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-56c0-4.4-3.6-8-8-8z"></path>
+                                                </svg>
+                                                <div class="AppOutput_isMobile__FUq0K">Save As Image</div>
+                                            </div>
+                                        </button>
+                                    </a>
+                                        <button   id="copyButton" type="button" class="AppOutput_resultActionButton__QM5CW" style="border-color: rgb(0, 0, 0); color: rgb(0, 0, 0);">
+                                            <div class="AppOutput_resultActionButtonLayout__g3u6v">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="Icon_container__7xqR9" width="32" height="32" style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);">
+                                                    <path
+                                                        d="M208.1 94.9c-11.1-.1-21.6 4-29.6 11.7-3.2 3.1-3.3 8.1-.2 11.3s8.1 3.3 11.3.2c5-4.8 11.4-7.3 18.5-7.3 13.2 0 24 9 24 20v7.2c-6.7-4.5-15-7.2-24-7.2-22.1 0-40 16.1-40 36s17.9 36 40 36c9.3 0 17.9-2.9 24.7-7.7 1.2 2.8 4 4.8 7.3 4.8 4.4 0 8-3.6 8-8v-61.1c-.1-19.8-18-35.9-40-35.9zm-.1 92c-13.2 0-24-9-24-20s10.8-20 24-20 24 9 24 20-10.8 20-24 20zM159.1 188.3l-72-136C85.7 49.6 83 48 80 48s-5.7 1.6-7.1 4.3l-72 136c-2.1 3.9-.6 8.7 3.3 10.8s8.7.6 10.8-3.3L34 160h92l18.9 35.7c1.4 2.7 4.2 4.3 7.1 4.3 1.3 0 2.5-.3 3.7-.9 3.9-2.1 5.4-6.9 3.4-10.8zM42.5 144 80 73.1l37.5 70.9z"
+                                                    ></path>
+                                                </svg>
+                                                <div class="AppOutput_isMobile__FUq0K">Copy Text</div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="AppOutput_outputsWrapper__u7O4M" style="border-color: rgb(0, 0, 0);">
+                                        <div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+                                            <ul class="AppOutput_outputs__WUq4T">
+                                                <li class="AppOutput_outputItem__Uwlsi" style="border-color: rgb(0, 0, 0);">
+                                                    <div class="AppOutput_outputText__wQsB0" id='myDiv'>
+                                                        <div id='dataContainer1'></div>
+                                                    
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <textarea
+            tabindex="-1"
+            aria-hidden="true"
+            style="
+                min-height: 0px !important;
+                max-height: none !important;
+                height: 0px !important;
+                visibility: hidden !important;
+                overflow: hidden !important;
+                position: absolute !important;
+                z-index: -1000 !important;
+                top: 0px !important;
+                right: 0px !important;
+                border-width: 0px;
+                box-sizing: border-box;
+                font-family: Manrope, -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: normal;
+                line-height: 26.55px;
+                padding: 14px 20px 17.5px;
+                tab-size: 8;
+                text-indent: 0px;
+                text-rendering: auto;
+                text-transform: none;
+                width: 372.975px;
+                word-break: normal;
+            "
+        ></textarea>
+        
+
+<!-- my_template.html -->
+{% comment %} <form id="myForm" method="post" action="{% url 'home' %}">
+    {% csrf_token %}
+    <input type="text" id="year" name="year" placeholder="Year">
+    <input type="text" id="make" name="make" placeholder="Make">
+    <input type="text" id="model" name="model" placeholder="Model">
+    <input type="text" id="features" name="features" placeholder="Features">
+    <input type="text" id="product" name="product" placeholder="Product">
+    <button id="loadDataBt" type="button">Load Data</button>
+  </form> {% endcomment %}
+  
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      console.log('page ready');
+  
+      var progressBar = $(".progress-bar");
+      var progressText = $("#progressText");
+      var progress = $('#progress');
+      var intervalId;
+  
+      $("#loadDataBt").on("click", function() {
+        console.log('btn click');
+        var question = $('#year').val();
+        var question1 = $('#make').val();
+        var question2 = $('#model').val();
+        var question3 = $('#features').val();
+        var question4 = $('#product').val();
+        console.log(question1, question2, question3, question4);
+  
+        progressBar.css("width", "0%");
+        progressBar.attr("aria-valuenow", "0");
+        progressBar.show();
+        progressText.show();
+        progress.show();
+        var progressValue = 0;
+        clearInterval(intervalId);
+        intervalId = setInterval(function() {
+          progressValue += 10;
+          progressBar.css("width", progressValue + "%");
+          progressBar.attr("aria-valuenow", progressValue);
+          progressText.text("Loading data... " + progressValue + "%");
+          if (progressValue >= 100) {
+            clearInterval(intervalId);
+  
+            // Use AJAX to fetch data from Django view
+            $.ajax({
+              type: 'POST',
+              url: $('#myForm').attr('action'),
+              data: {
+                'year': question,
+                'make': question1,
+                'model': question2,
+                'features': question3,
+                'product': question4,
+                'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val()
+              },
+              success: function(data) {
+                // Handle successful response here
+                // Update UI or do further processing with the response data
+                alert(data.nav);
+                $('#year').val('');
+                $('#make').val('');
+                $('#model').val('');
+                $('#features').val('');
+                $('#product').val('');
+  
+                $("#dataContainer1").html(data.nav);
+                $("#shareid").html(data.id);
+                $("#dataContainer2").css("display", "block");
+                $("#dataContainer1").show();
+  
+                // Hide progress bar and text
+                progressBar.hide();
+                progressText.hide();
+                progress.hide();
+              },
+              error: function() {
+                // Handle error case here
+                progressText.text("Error loading data!");
+                // Hide progress bar
+                progressBar.hide();
+                $("#dataContainer").hide();
+              }
+            });
+          }
+        }, 1000);
+      });
+    });
+  </script>
+  
+
+
+        <div id="container" style="display:none;">
+          {% include 'modal.html' %}
+      </div>
+      <div id="container1" style="display:none;">
+        {% include 'pagemodal.html' %}
+    </div>
+        <div class="ReactModalPortal"></div>
+    
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+         
+    
+    <script>
+      const copyButton = document.getElementById('copyButton');
+      const myDiv = document.getElementById('myDiv');
+    
+      copyButton.addEventListener('click', () => {
+        // Create a temporary textarea element to store the text to be copied
+        const tempTextArea = document.createElement('textarea');
+        tempTextArea.value = myDiv.textContent;
+      
+        // Append the textarea element to the body
+        document.body.appendChild(tempTextArea);
+      
+        // Select the text inside the textarea
+        tempTextArea.select();
+      
+        // Copy the selected text to clipboard
+        document.execCommand('copy');
+      
+        // Remove the temporary textarea element
+        document.body.removeChild(tempTextArea);
+    
+        // Show a toast notification to indicate that the text has been copied
+        Toastify({
+          text: 'Text copied to clipboard',
+          duration: 3000, // 3 seconds
+          close: true,
+          gravity: 'bottom', // bottom-right by default
+          positionLeft: false,
+          backgroundColor: 'white',
+          stopOnFocus: true,
+          style: {
+            borderRadius: '20px',
+            background: "#333",
+            color: "black",
+            fontFamily: "sans-serif",
+            fontSize: "16px",
+            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }
+        }).showToast();
+      });
+    </script>
+    <script>
+      // Add click event listener to the Show button
+      $("#show-button").on("click", function() {
+        $("#container").show();  // Use jQuery show() method to show the container
+     });
+     
+     // Add click event listener to the Hide button
+     $("#hide-button").on("click", function() {
+        $("#container").hide();  // Use jQuery hide() method to hide the container
+     });
+     
+    
+    </script>
+    
+    <script>
+       // Add click event listener to the Show button
+       $("#show-button1").on("click", function() {
+        $("#container1").show();  // Use jQuery show() method to show the container
+     });
+     
+     // Add click event listener to the Hide button
+     $("#hide-button1").on("click", function() {
+        $("#container1").hide();  // Use jQuery hide() method to hide the container
+     });
+     
+    
+    </script>
+    </body>
+</html>

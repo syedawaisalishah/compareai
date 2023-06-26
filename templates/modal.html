@@ -1,0 +1,309 @@
+{% load social_share %}
+<div class="ReactModalPortal">
+  <div
+    class="ReactModal__Overlay ReactModal__Overlay--after-open"
+    style="
+      position: fixed;
+      inset: 0px;
+      background-color: var(--colorOverlay);
+    "
+  >
+    <div
+      class="ReactModal__Content ReactModal__Content--after-open"
+      tabindex="-1"
+      role="dialog"
+      aria-modal="true"
+      style="
+        position: absolute;
+        inset: 50% auto auto 50%;
+        border: 0px;
+        background-image: initial;
+        background-position: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: var(--colorGray0);
+        overflow: auto;
+        border-radius: var(--borderRadius2);
+        outline: none;
+        padding: var(--spacing4) var(--spacing5);
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        max-width: 95%;
+        color: var(--colorGray8);
+        width: 39rem;
+      "
+    >
+      <div data-theme="light">
+        <div class="BaseModal_header___MWoM">
+          <h1 class="BaseModal_modalTitle__MSigN"></h1>
+          <button
+          id="hide-button"
+            class="IconButton_button__mO75b IconButton_secondaryButton__S7WvB"
+            type="button"
+            fdprocessedid="ne9szb"
+            style="width: 40px; height: 40px"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 192 192"
+              class="Icon_container__7xqR9"
+              width="24"
+              height="24"
+              style="color: var(--colorGray2); fill: var(--colorGray2)"
+            >
+              <path
+                d="m104.5 96 49.8-49.8c2.3-2.3 2.3-6.1 0-8.5-2.3-2.3-6.1-2.3-8.5 0L96 87.5 46.2 37.8c-2.3-2.3-6.1-2.3-8.5 0-2.3 2.3-2.3 6.1 0 8.5L87.5 96l-49.8 49.8c-2.3 2.3-2.3 6.1 0 8.5 1.2 1.2 2.7 1.8 4.2 1.8s3.1-.6 4.2-1.8L96 104.5l49.8 49.8c1.2 1.2 2.7 1.8 4.2 1.8s3.1-.6 4.2-1.8c2.3-2.3 2.3-6.1 0-8.5z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <form>
+          <div class="BaseModal_content__zbr90">
+            <div>
+              <div class="ShareModal_appTitle__jJzc_">Niche Navigator</div>
+              <div class="ShareModal_qrWrapper__OVGd5">
+                <div class="ShareModal_qr__uQCbU">
+                 
+                
+                <image src='/static/images/qrcode.png' height=200>
+                </div>
+              </div>
+              <div class="ShareModal_socialMediaButtons__d0FAN">
+                
+     <button
+     id='twitterShareButton'
+                  class="IconButton_button__mO75b IconButton_secondaryButton__S7WvB"
+                  type="button"
+                  fdprocessedid="unn7l"
+                  style="width: 60px; height: 60px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="Icon_container__7xqR9"
+                    width="40"
+                    height="40"
+                    style="
+                      color: var(--colorGray2);
+                      fill: var(--colorGray2);
+                    "
+                  >
+                    <path
+                      d="M496 109.5a201.8 201.8 0 0 1-56.55 15.3 97.51 97.51 0 0 0 43.33-53.6 197.74 197.74 0 0 1-62.56 23.5A99.14 99.14 0 0 0 348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 0 0 2.54 22.1 280.7 280.7 0 0 1-203-101.3A95.69 95.69 0 0 0 36 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0 1 35.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 0 1-25.94 3.4 94.38 94.38 0 0 1-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0 1 39.5 405.6a203 203 0 0 1-23.5-1.4A278.68 278.68 0 0 0 166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 0 0 496 109.5z"
+                    ></path>
+                  </svg>
+                  
+                  </button
+
+                >
+                
+                <button
+                id='linkedinShareButton'
+                  class="IconButton_button__mO75b IconButton_secondaryButton__S7WvB"
+                  type="button"
+                  fdprocessedid="r1h20w"
+                  style="width: 60px; height: 60px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="Icon_container__7xqR9"
+                    width="40"
+                    height="40"
+                    style="
+                      color: var(--colorGray2);
+                      fill: var(--colorGray2);
+                    "
+                  >
+                    <path
+                      d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
+                    ></path>
+                  </svg></button
+                ><button
+                id='facebookShareButton'
+
+              
+                  class="IconButton_button__mO75b IconButton_secondaryButton__S7WvB"
+                  type="button"
+                  fdprocessedid="l10asl"
+                  style="width: 60px; height: 60px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="Icon_container__7xqR9"
+                    width="40"
+                    height="40"
+                    style="
+                      color: var(--colorGray2);
+                      fill: var(--colorGray2);
+                    "
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                    ></path>
+                  </svg></button
+                ><button
+       
+                  class="IconButton_button__mO75b IconButton_secondaryButton__S7WvB"
+                  type="button"
+                  fdprocessedid="7zu3d"
+                  style="width: 60px; height: 60px"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="Icon_container__7xqR9"
+                    width="40"
+                    height="40"
+                    style="
+                      color: var(--colorGray2);
+                      fill: var(--colorGray2);
+                    "
+                  >
+                    <path
+                      d="M416 344c0-4.4-3.6-8-8-8h-64c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h64c4.4 0 8-3.6 8-8zM336 280c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8zM472 416h-48c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM472 272h-32c-4.4 0-8 3.6-8 8v32c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8v-32c0-4.4-3.6-8-8-8zM312 432h-32c-4.4 0-8 3.6-8 8v32c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8v-32c0-4.4-3.6-8-8-8zM344 176h64c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8h-64c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8z"
+                    ></path>
+                    <path
+                      d="M448 32H304c-17.6 0-32 14.4-32 32v144c0 17.6 14.4 32 32 32h144c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32zm0 176H304V64h144zM104 176h64c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8h-64c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8z"
+                    ></path>
+                    <path
+                      d="M208 32H64c-17.6 0-32 14.4-32 32v144c0 17.6 14.4 32 32 32h144c17.6 0 32-14.4 32-32V64c0-17.6-14.4-32-32-32zm0 176H64V64h144zM104 416h64c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8h-64c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8z"
+                    ></path>
+                    <path
+                      d="M208 272H64c-17.6 0-32 14.4-32 32v144c0 17.6 14.4 32 32 32h144c17.6 0 32-14.4 32-32V304c0-17.6-14.4-32-32-32zm0 176H64V304h144z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="ShareModal_shareInput__yME0H">
+                <div class="ShareModal_shareUrl__zx5SH" id='yourNewDivId'>
+     niche.com
+                </div>
+                <button
+                id='yourNewButtonId'
+                  type="button"
+                  class="ShareModal_copyLink__5eHZN"
+                  fdprocessedid="2sxqwzj"
+                >
+                  Copy Link
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="BaseModal_footer__HbWws"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<textarea
+  tabindex="-1"
+  aria-hidden="true"
+  style="
+    min-height: 0px !important;
+    max-height: none !important;
+    height: 0px !important;
+    visibility: hidden !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    z-index: -1000 !important;
+    top: 0px !important;
+    right: 0px !important;
+    border-width: 0px;
+    box-sizing: border-box;
+    font-family: Manrope, -apple-system, system-ui, 'Segoe UI', Roboto,
+      'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 26.55px;
+    padding: 14px 20px 17.5px;
+    tab-size: 8;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-transform: none;
+    width: 362.4px;
+    word-break: normal;
+  "
+></textarea>
+<div class="ReactModalPortal"></div>
+
+<script>
+  // JavaScript code for Facebook sharing
+document.getElementById("facebookShareButton").addEventListener("click", function() {
+  var currentUrl = window.location.href; // Get the current URL
+  var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(currentUrl); // Generate Facebook sharing link
+  window.open(shareUrl, "_blank");
+});
+
+</script>
+<script>
+  // JavaScript code for LinkedIn sharing
+document.getElementById("linkedinShareButton").addEventListener("click", function() {
+  var currentUrl = window.location.href; // Get the current URL
+  var shareUrl = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(currentUrl); // Generate LinkedIn sharing link
+  window.open(shareUrl, "_blank");
+});
+
+</script>
+   
+<script>
+  // JavaScript code
+  document.getElementById("twitterShareButton").addEventListener("click", function() {
+    var tweetText = "Niche Navigator: Try out This Ai tool.";
+    var currentUrl = window.location.href; // Get the current URL
+    var shareUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText) + "&url=" + encodeURIComponent(currentUrl); // Append current URL to the sharing link
+    window.open(shareUrl, "_blank");
+  });
+  
+      </script>
+<script>
+  const copyButton2 = document.getElementById('yourNewButtonId'); // Update with your desired button ID
+  const myDiv2 = document.getElementById('yourNewDivId'); // Update with your desired div element ID
+
+  copyButton2.addEventListener('click', () => {
+    // Create a temporary textarea element to store the text to be copied
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = myDiv2.textContent;
+  
+    // Append the textarea element to the body
+    document.body.appendChild(tempTextArea);
+  
+    // Select the text inside the textarea
+    tempTextArea.select();
+  
+    // Copy the selected text to clipboard
+    document.execCommand('copy');
+  
+    // Remove the temporary textarea element
+    document.body.removeChild(tempTextArea);
+
+    // Show a toast notification to indicate that the text has been copied
+    Toastify({
+      text: 'Url copied to clipboard',
+      duration: 3000, // 3 seconds
+      close: true,
+      gravity: 'bottom', // bottom-right by default
+      positionLeft: false,
+      backgroundColor: 'black',
+      stopOnFocus: true,
+      style: {
+        borderRadius: '20px',
+        background: "#333",
+        color: "white",
+        fontFamily: "sans-serif",
+        fontSize: "16px",
+        textAlign: "center",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }
+    }).showToast();
+  });
+</script>

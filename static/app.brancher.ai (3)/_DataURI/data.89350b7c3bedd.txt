@@ -1,0 +1,1 @@
+chrome-extension://gggfodkhdbmidgckncaifpfodkiiolol/scripts/plugins.js
